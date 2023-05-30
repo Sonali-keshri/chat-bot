@@ -1,0 +1,107 @@
+.welcome-container {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+
+}
+/* Website Content */
+.front-page {
+    width: 100vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    background: linear-gradient(var(--overlay-1), var(--overlay-1)), url("../assest/bg.webp");
+    background-size: cover;
+}
+
+.inner-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.inner-content {
+    margin-bottom: 2rem;
+}
+
+.inner-content>h3{
+    color: var(--secondary-color);
+}
+.inner-content>h1 {
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+}
+
+.inner-content>p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+
+/* CountDown CSS */
+.countDown {
+    display: flex;
+    gap: 2rem;
+}
+
+.countDown>div>h1 {
+    text-align: center;
+    background-color: var(--text-color);
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*  SideBar CSS */
+.sideBar {
+    max-width: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.chat-icon-box {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-bg);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 5px;
+}
+.chat-icon-box>p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Media Queries for small device */
+@media screen and (max-width:767px) {
+    .inner-page{
+        padding: 0 4rem;
+        justify-content: flex-start; 
+    }
+    .inner-content>h1{
+        font-size: 2.5rem;
+    }
+    .inner-content>p{
+        text-align: left;
+        font-size: 1rem;
+    }
+    .sideBar{
+        right: 0px;
+    }
+}
